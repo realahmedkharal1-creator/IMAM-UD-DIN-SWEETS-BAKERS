@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-display: 'Cinzel', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #FAF8F5;
+    color: #1C1917;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-display-royal {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom Utilities & Animations */
+.bg-radial-gold {
+  background: radial-gradient(circle at 50% 30%, rgba(245, 158, 11, 0.15) 0%, rgba(146, 64, 14, 0.05) 50%, transparent 100%);
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #d97706, #f59e0b, #b45309) 1;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #B45309 0%, #D97706 50%, #92400E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F0E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #D97706;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B45309;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "IMAM-UD-DIN SWEETS & BAKERS",
+  "description": "Official presentation website for IMAM-UD-DIN Sweets & Bakers in Arifwala, featuring pure desi ghee traditional mithai, custom celebration cakes, fresh bakery delicacies, fast food, live opening status, Google reviews, interactive ordering via WhatsApp, and location map.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
